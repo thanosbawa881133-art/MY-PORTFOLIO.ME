@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Qaim Hussain</title>
+    <link rel="stylesheet" href="email.html">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="contact-header">
+        <a href="index.html" class="back-btn">&larr; Back to Home</a>
+        <div class="logo">PORTFOLIO<span>.</span></div>
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-box">
+            <h2>Send Me a Message</h2>
+            <p>Fill out the form below and your message will be sent directly to my inbox.</p>
+
+            <!-- Formspree action url lagayein -->
+            <action action="https://formspree.io/f/xbjnqpyz" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Your Email Address</label>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" name="subject" placeholder="Project / Query subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d0e12;
+    color: #e0e0e0;
+    min-height: 100vh;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #111319;
+    border-bottom: 1px solid #1f2330;
+}
+
+.back-btn {
+    color: #ff3b3f;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #ff3b3f;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.contact-box {
+    background-color: #14161f;
+    border: 1px solid #1f2330;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 550px;
+}
+
+.contact-box h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.contact-box p {
+    color: #7a8093;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    color: #a0a5b5;
+    margin-bottom: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #0d0e12;
+    border: 1px solid #232736;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #ff3b3f;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff3b3f;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #e03235;
+}
+</style>
